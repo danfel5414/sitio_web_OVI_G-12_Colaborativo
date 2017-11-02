@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
+    margin: 0;
+    padding: 0;
+=======
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
 }
@@ -119,10 +124,137 @@ nav li li{
 nav li:hover>ul >li {
 	max-height: 500px;
 	overflow: visible;
+=======
+	margin: 0;
+	padding: 0;
+>>>>>>> origin/master
+}
+
+body {
+    background-color: #12203f;
+    background-size: cover;
+}
+
+
+/****************************************CONTENEDOR GENERAL*************************************/
+
+#contenedor {
+    width: 1100px;
+    /* grande del contenedor*/
+    margin: auto;
+    /* centrarse automaticamente*/
+    margin-top: 10px;
+    background-color: #12203f;
+    border-radius: 0.5em;
+}
+
+
+/********************************************HEADER***************************************************/
+
+header {
+    height: 90px;
+    max-width: 1400px;
+    /*para agrandar los cuadros*/
+    margin: 0.5em auto;
+    padding: 0.25em;
+    /* es como un espacio*/
+    text-align: center;
+    /*alineacion del texto*/
+    border-radius: 0.5em;
+    /*borde */
+    background-color: white;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 32px;
+    /*tamaño de la letra*/
+    float: left;
+    /* lo mueve hacia el lado seleccionado*/
+    margin-left: 35px;
+    /*movimiento en pixeles de izquierda*/
+    margin-top: 20px;
+    /*movimiento en pixeles de arriba*/
+    color: black;
+    /*darle color a la letra*/
+}
+
+header img {
+    width: 400px;
+    /*grande de la imagen*/
+    border-radius: 0.5em;
+    /*redordeado del borde*/
+    padding: 0.25em;
+    /*espacio */
+    float: right;
+    /*flotar algun lado*/
+}
+
+
+/*********************************************************NAV*********************************************/
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+}
+nav li{
+	line-height: 3rem;
+	position: relative;
+	}
+	nav li ul{
+		position: absolute;
+	}
+
+nav a {
+	color: Black;
+	display: block;
+	padding: 0 2.5em;
+    text-decoration: none;
+	transition: .4s;
+}
+nav a:hover{
+	background: #434343;
+
+}
+
+nav li ul {
+    display: none;
+}
+nav li:hover ul{
+	display: block;
+}
+
+
+/*primer nivel*/
+nav > ul{
+	background: orange;
+	display: table;
+	width: 100%;
+}
+nav > ul > li {
+	float: left;
+}
+/*segundo nivel*/
+nav li li{
+	background: orange;
+	max-height: 0;
+	overflow: hidden;
+	transition: all .7s;
+	width: 163px;
+
+>>>>>>> origin/master
+}
+nav li:hover>ul >li {
+	max-height: 500px;
+	overflow: visible;
 }
 
 /*************************************************CONTENIDO**********************************************/
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
 #contenido {
     float: left;
     width: 700px;
@@ -132,10 +264,30 @@ nav li:hover>ul >li {
     margin-top: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
+<<<<<<< HEAD
+=======
+=======
+#contenido{
+	float: left;
+	width: 700px;
+	background-color: white;
+	border-radius: 2px;
+	overflow: hidden;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+>>>>>>> origin/master
+>>>>>>> origin/master
 }
 
 .timeline-Body {
     position: relative;
+<<<<<<< HEAD
+    border-top: 1px solid rgba(15, 70, 100, .12);
+    border-bottom: 1px solid rgba(15, 70, 100, .12);
+    overflow: auto;
+=======
+<<<<<<< HEAD
     border-top: 1px solid rgba(15, 70, 100, .12);
     border-bottom: 1px solid rgba(15, 70, 100, .12);
     overflow: auto;
@@ -210,11 +362,106 @@ aside iframe {
     width: 370px;
     height: 300px;
     margin-left: 7px;
+=======
+    border-top: 1px solid rgba(15,70,100,.12);
+    border-bottom: 1px solid rgba(15,70,100,.12);
+	overflow: auto;
+}
+.articulos h2{
+	font-size: 30px; /*tamaño de la letra*/
+	padding: 10px;
+	color: #154360; /*para darle color a las letras*/
+	border-bottom: 5px solid black; /*permite hacer una linea en la parte baja*/
+	margin-top: 10px;	/*espacio arriba*/
+>>>>>>> origin/master
+}
+
+.articulos h2 {
+    font-size: 30px;
+    /*tamaño de la letra*/
+    padding: 10px;
+    color: #154360;
+    /*para darle color a las letras*/
+    border-bottom: 5px solid black;
+    /*permite hacer una linea en la parte baja*/
+    margin-top: 10px;
+    /*espacio arriba*/
+}
+
+.articulos img {
+    float: left;
+    /*flotar*/
+    margin: 10px;
+    width: 200px;
+    /*anchura*/
+}
+
+.articulos p {
+    margin-bottom: 10px;
+    /* espacio al sur*/
+    margin-top: 10px;
+    margin-right: 10px;
+	margin-left: 15px;
+    font-size: 17px;
+    /*tamaño de letra*/
+    text-align: justify;
+    /*nos ayuda a justificar alinear o centrar*/
+}
+
+
+/***************************************************ASIDE***************************************************/
+
+aside {
+    float: right;
+    width: 390px;
+    /*anchura*/
+    background-color: white;
+    margin-top: 5px;
+    border-radius: 2px;
+    /* borde a las puntas*/
+}
+
+aside h3 {
+    font-size: 25px;
+    /*tamaño de la letra*/
+    background-color: #154360;
+    /*color al fondo*/
+    text-align: center;
+    /*central el titulo*/
+    padding: 10px;
+    margin-top: 0;
+    color: white;
+    border-bottom: 5px solid black;
+}
+
+aside p {
+    padding: 10px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+<<<<<<< HEAD
+aside iframe {
+    width: 370px;
+    height: 300px;
+    margin-left: 7px;
+=======
+aside iframe{
+	width: 370px;
+	height: 300px;
+	margin-left: 7px;
+>>>>>>> origin/master
+>>>>>>> origin/master
 }
 
 
 /**************************************FOOTER*******************************************/
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
 footer {
     height: 60px;
     background-color: #154360;
@@ -222,6 +469,8 @@ footer {
     clear: both;
     /* IMPORTANTE para bloquear el floar y acerlo que vuelva a su posicion inicial*/
     margin-top: 10px;
+<<<<<<< HEAD
+=======
 }
 
 footer img {
@@ -235,4 +484,34 @@ footer div {
     font-size: 15px;
     color: white;
     text-align: center;
+=======
+
+footer{
+	height: 60px;
+	background-color: #154360;
+	border-radius: 10px;
+	clear: both; /* IMPORTANTE para bloquear el floar y acerlo que vuelva a su posicion inicial*/
+	margin-top: 10px;
+>>>>>>> origin/master
+}
+
+footer img {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+<<<<<<< HEAD
+footer div {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+=======
+footer div{
+	font-size: 15px;
+	color: white;
+	text-align: center;
+>>>>>>> origin/master
+>>>>>>> origin/master
 }
